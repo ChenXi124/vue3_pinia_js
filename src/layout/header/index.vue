@@ -32,7 +32,7 @@
     <Space :size="20">
       <Search />
       <FullScreen />
-      <LocalePicker />
+      <!-- <LocalePicker /> 中英文翻译 -->
       <Dropdown placement="bottomRight">
         <Avatar :src="userInfo.headImg" :alt="userInfo.name">{{ userInfo.name }}</Avatar>
         <template #overlay>
@@ -78,7 +78,6 @@
     type MenuTheme,
   } from 'ant-design-vue';
   import { Search, FullScreen, ProjectSetting } from './components/';
-  import { LocalePicker } from '@/components/basic/locale-picker';
   import { useUserStore } from '@/store/modules/user';
   import { useKeepAliveStore } from '@/store/modules/keepAlive';
   import { LOGIN_NAME } from '@/router/constant';

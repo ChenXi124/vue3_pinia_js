@@ -1,8 +1,6 @@
 import 'nprogress/css/nprogress.css'; // 进度条样式
 import { createRouter, createWebHashHistory } from 'vue-router';
-
 import { createRouterGuards } from './router-guards';
-
 import outsideLayout from './outsideLayout';
 import { whiteNameList } from './constant';
 import type { App } from 'vue';
